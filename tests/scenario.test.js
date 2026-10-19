@@ -1,4 +1,4 @@
-/* Replays the evaluator script (assignment section 5.2) against the engine and checks key outcomes.
+/* Replays the suggested walkthrough against the engine and checks key outcomes.
    Run: node prototype/tests/scenario.test.js */
 require('../js/data.js');
 const E = require('../js/engine.js');

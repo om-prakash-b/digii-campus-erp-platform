@@ -1,4 +1,4 @@
-/* Sample data from the assignment (section 4) plus reference data the prototype needs.
+/* Sample data for the twelve students in the case study, plus reference data the prototype needs.
    Nothing here decides an outcome: eligibility, fees and statuses are computed by engine.js. */
 (function (root) {
   'use strict';
@@ -62,7 +62,7 @@
   ];
 
   // Student-side facts from the sample data. They play automatically as the clock passes them
-  // (can be switched off), so the evaluator does not have to re-enact them by hand.
+  // (can be switched off), so they don't need to be re-enacted by hand.
   const SAMPLE_ACTIONS = [
     { key: 'S03-pay', at: '2025-11-03T11:00', sid: 'S03', act: 'submitAndPay', delay: 0, label: 'S03 submits the form and pays the exam fee (sample data: "Paid exam fee on 3 Nov")' },
     { key: 'S12-start', at: '2025-11-11T09:00', sid: 'S12', act: 'submit', label: 'S12 starts the exam form but does not pay (sample data: "Started on 11 Nov")' },
@@ -70,7 +70,7 @@
     { key: 'S08-pay', at: '2025-11-20T23:58', sid: 'S08', act: 'submitAndPay', delay: 5, label: 'S08 pays at 11:58 PM; bank confirms at 12:03 AM on 21 Nov (sample data)' },
   ];
 
-  // Evidence-pack timeline (section 2.5). "change" entries can be prepared as admin changes;
+  // Timeline of events the prototype replays. "change" entries can be prepared as admin changes;
   // the admin still reviews the impact preview and confirms.
   const TIMELINE = [
     { date: '2025-10-31', label: 'Attendance cut-off', kind: 'info', note: 'Set as the cut-off date during setup.' },
